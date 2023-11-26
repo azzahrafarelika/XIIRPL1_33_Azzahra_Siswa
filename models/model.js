@@ -14,6 +14,7 @@ const siswaSchema = new mongoose.Schema({
   NamaLengkap: {
     type: String,
     required: [true, "Silahkan isikan nama siswa"],
+    unique: true,
   },
   Kelas: {
     type: String,
@@ -22,6 +23,7 @@ const siswaSchema = new mongoose.Schema({
   NoHP: {
     type: String,
     required: [true, "Silahkan isikan tanggal lahir siswa"],
+    unique: true,
   },
 });
 
